@@ -1,0 +1,457 @@
+{% load static %}
+{% load bootstrap4 %}
+{% load compress %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Poca - Podcast &amp; Audio Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>90.8MHz FMCRS</title>
+
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
+  <!-- Core Stylesheet -->
+  {% compress css %}
+  <link type="tet/x-scss" rel="stylesheet" href="{% static 'style.css' %}">
+{% endcompress %}
+</head>
+
+<body>
+  <!-- Preloader -->
+  
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <!-- Classy Menu -->
+        <nav class="classy-navbar justify-content-between" id="pocaNav">
+
+          <!-- Logo 
+          <a class="nav-brand" href="index.html"><img src="{% static './img/core-img/download(1).png' %}" alt=""></a>
+-->
+          <!-- Navbar Toggler -->
+          <div class="classy-navbar-toggler">
+            <span class="navbarToggler"><span></span><span></span><span></span></span>
+          </div>
+
+          <!-- Menu -->
+          <div class="classy-menu">
+
+            <!-- Menu Close Button -->
+            <div class="classycloseIcon">
+              <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+            </div>
+
+            <!-- Nav Start -->
+            <div class="classynav">
+              <ul id="nav">
+                <li class="current-item"><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'rec:podcast' %}">recordings</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'login:login' %}">Login</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+              </ul>
+
+              <!-- Top Search Area -->
+
+              <!-- Top Social Area -->
+              <div class="top-social-area">
+                <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                <a href="#" class="fa fa-pinterest" aria-hidden="true"></a>
+                <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+                <a href="#" class="fa fa-youtube-play" aria-hidden="true"></a>
+              </div>
+
+            </div>
+            <!-- Nav End -->
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Welcome Area Start ***** -->
+  <section class="welcome-area">
+    <!-- Welcome Slides -->
+    <div class="welcome-slides owl-carousel">
+
+      <!-- Single Welcome Slide -->
+      <div class="welcome-welcome-slide bg-img bg-overlay" style="background-image: url({% static 'img/bg-img/1.jpg' %});">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+              <!-- Welcome Text -->
+              <div class="welcome-text">
+                <h2 data-animation="fadeInUp" data-delay="100ms">FM COMMUNITY RADIO, GNDEC LDH</h2>
+                <h5 data-animation="fadeInUp" data-delay="300ms">-Voice of Genconians.</h5>
+                <div class="row h-100 align-items-center">
+                <div class="col-12">
+                <div class="welcome-btn-group">
+                  <a href="{% url 'events:calender' %}" class="btn poca-btn m-2 ml-0 active" data-animation="fadeInUp" data-delay="500ms">event calender</a>
+                </div>
+                </div>
+                </div>
+              </div>
+              
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+  
+
+      <!-- Single Welcome Slide -->
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+              <!-- Welcome Text -->
+              
+              <!-- Welcome Music Area -->
+  <!-- ***** Welcome Area End ***** -->
+
+  
+  <section class="poca-latest-epiosodes section-padding-80">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>TEAMS</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Menu -->
+    
+
+    <div class="container">
+      <div class="row poca-portfolio">
+
+        <!-- Single gallery Item -->
+        <div class="col-12 col-md-6 single_gallery_item entre wow fadeInUp" data-wow-delay="0.2s">
+          <!-- Welcome Music Area -->
+          <div class="poca-music-area style-2 d-flex align-items-center flex-wrap">
+            
+            <div class="poca-music-content text-center">
+              <span class="music-published-date mb-2">AFSAANE PUNJABIAN DE</span>
+              <h5>deals with punjab's celebrated personalities</h5>
+              <div class="music-meta-data">
+                <p>recent recording</a></p>
+              </div>
+              <!-- Music Player -->
+              <div class="poca-music-player">
+                <audio preload="auto" controls>
+                  <source src="{% static 'audio/dummy-audio.mp3' %}">
+                </audio>
+              </div>
+              <!-- Likes, Share & Download -->
+              <div class="likes-share-download d-flex align-items-center justify-content-between">
+                <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Like (29)</a>
+                <div>
+                  <a href="#" class="mr-4"><i class="fa fa-share-alt" aria-hidden="true"></i> Share(04)</a>
+                  <a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download (12)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single gallery Item -->
+        <div class="col-12 col-md-6 single_gallery_item entre tutor wow fadeInUp" data-wow-delay="0.2s">
+          <!-- Welcome Music Area -->
+          <div class="poca-music-area style-2 d-flex align-items-center flex-wrap">
+            
+            <div class="poca-music-content text-center">
+              <span class="music-published-date mb-2">RUBRU</span>
+            <h5>recordings on bah blah<h4>
+              <div class="music-meta-data">
+                <p>recent recording</p>
+              </div>
+              <!-- Music Player -->
+              <div class="poca-music-player">
+                <audio preload="auto" controls>
+                  <source src="{% static 'audio/dummy-audio.mp3' %}">
+                </audio>
+              </div>
+              <!-- Likes, Share & Download -->
+              <div class="likes-share-download d-flex align-items-center justify-content-between">
+                <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Like (29)</a>
+                <div>
+                  <a href="#" class="mr-4"><i class="fa fa-share-alt" aria-hidden="true"></i> Share(04)</a>
+                  <a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download (12)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single gallery Item -->
+        <div class="col-12 col-md-6 single_gallery_item media wow fadeInUp" data-wow-delay="0.2s">
+          <!-- Welcome Music Area -->
+          <div class="poca-music-area style-2 d-flex align-items-center flex-wrap">
+            
+            <div class="poca-music-content text-center">
+              <span class="music-published-date mb-2">SADDA CAMPUS</span>
+              <h5>all the campus related achievements</h2>
+              <div class="music-meta-data">
+                <p>recent recording</p>
+              </div>
+              <!-- Music Player -->
+              <div class="poca-music-player">
+                <audio preload="auto" controls>
+                  <source src="{% static 'audio/dummy-audio.mp3' %}">
+                </audio>
+              </div>
+              <!-- Likes, Share & Download -->
+              <div class="likes-share-download d-flex align-items-center justify-content-between">
+                <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Like (29)</a>
+                <div>
+                  <a href="#" class="mr-4"><i class="fa fa-share-alt" aria-hidden="true"></i> Share(04)</a>
+                  <a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download (12)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single gallery Item -->
+        <div class="col-12 col-md-6 single_gallery_item media wow fadeInUp" data-wow-delay="0.2s">
+          <!-- Welcome Music Area -->
+          <div class="poca-music-area style-2 d-flex align-items-center flex-wrap">
+            
+            <div class="poca-music-content text-center">
+              <span class="music-published-date mb-2">SEHAT SAMBHAL</span>
+              <h5>knowledge about health realated issues</h5>
+              <div class="music-meta-data">
+                <p>recent recording</p>
+              </div>
+              <!-- Music Player -->
+              <div class="poca-music-player">
+                <audio preload="auto" controls>
+                  <source src="{% static 'audio/dummy-audio.mp3' %}">
+                </audio>
+              </div>
+              <!-- Likes, Share & Download -->
+              <div class="likes-share-download d-flex align-items-center justify-content-between">
+                <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Like (29)</a>
+                <div>
+                  <a href="#" class="mr-4"><i class="fa fa-share-alt" aria-hidden="true"></i> Share(04)</a>
+                  <a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download (12)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single gallery Item -->
+        <div class="col-12 col-md-6 single_gallery_item tech tutor wow fadeInUp" data-wow-delay="0.2s">
+          <!-- Welcome Music Area -->
+          <div class="poca-music-area style-2 d-flex align-items-center flex-wrap">
+        
+            <div class="poca-music-content text-center">
+              <span class="music-published-date mb-2">IK MULAKAAT</span>
+              <h5>recordings of interviews</h5>
+              <div class="music-meta-data">
+                <p>latest recording</p>
+              </div>
+              <!-- Music Player -->
+              <div class="poca-music-player">
+                <audio preload="auto" controls>
+                  <source src="{% static 'audio/dummy-audio.mp3' %}">
+                </audio>
+              </div>
+              <!-- Likes, Share & Download -->
+              <div class="likes-share-download d-flex align-items-center justify-content-between">
+                <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Like (29)</a>
+                <div>
+                  <a href="#" class="mr-4"><i class="fa fa-share-alt" aria-hidden="true"></i> Share(04)</a>
+                  <a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download (12)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single gallery Item -->
+        <div class="col-12 col-md-6 single_gallery_item tech wow fadeInUp" data-wow-delay="0.2s">
+          <!-- Welcome Music Area -->
+          <div class="poca-music-area style-2 d-flex align-items-center flex-wrap">
+            
+            <div class="poca-music-content text-center">
+              <span class="music-published-date mb-2">ASSI TE SADDA SAMAJ</span>
+              <h5>addressing society's issues</h5>
+              <div class="music-meta-data">
+                <p>latest recording</p>
+              </div>
+              <!-- Music Player -->
+              <div class="poca-music-player">
+                <audio preload="auto" controls>
+                  <source src="{% static 'audio/dummy-audio.mp3' %}">
+                </audio>
+              </div>
+              <!-- Likes, Share & Download -->
+              <div class="likes-share-download d-flex align-items-center justify-content-between">
+                <a href="#"><i class="fa fa-heart" aria-hidden="true"></i> Like (29)</a>
+                <div>
+                  <a href="#" class="mr-4"><i class="fa fa-share-alt" aria-hidden="true"></i> Share(04)</a>
+                  <a href="#"><i class="fa fa-download" aria-hidden="true"></i> Download (12)</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- ***** Latest Episodes Area End ***** -->
+
+  <!-- ***** Featured Guests Area Start ***** -->
+  <section class="featured-guests-area">
+    <div class="container">
+      <div class="row">
+        <!-- Section Heading -->
+        <div class="col-12">
+          <div class="section-heading text-center">
+            <h2>CORE TEAM</h2>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-around">
+        <!-- Single Featured Guest -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="single-featured-guest mb-80">
+            <img src="{% static 'img/bg-img/25.jpg' %}" alt="">
+            <div class="guest-info">
+              <h5>DR. Sehajpal singh</h5>
+              <span>PATRON</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Featured Guest -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="single-featured-guest mb-80">
+            <img src="{% static 'img/bg-img/26.jpg' %}" alt="">
+            <div class="guest-info">
+              <h5>Jayden White</h5>
+              <span>CHAIRMAN</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single Featured Guest -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="single-featured-guest mb-80">
+            <img src="{% static 'img/bg-img/27.jpg' %}" alt="">
+            <div class="guest-info">
+              <h5>Vincent Reid</h5>
+              <span>STATION HEAD</span>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+<div class="row justify-content-around">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="single-featured-guest mb-80">
+            <img src="{% static 'img/bg-img/27.jpg' %}" alt="">
+            <div class="guest-info">
+              <h5>Vincent Reid</h5>
+              <span>STUDENT INCHARGE </span>
+            </div>
+          </div>
+        </div>
+      
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="single-featured-guest mb-80">
+            <img src="{% static 'img/bg-img/27.jpg' %}" alt="">
+            <div class="guest-info">
+              <h5>Vincent Reid</h5>
+              <span>CONVENOR</span>
+            </div>
+          </div>
+        </div>
+     
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="single-featured-guest mb-80">
+            <img src="{% static 'img/bg-img/27.jpg' %}" alt="">
+            <div class="guest-info">
+              <h5>Vincent Reid</h5>
+              <span>SECRETARY</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </section>
+  <!-- ***** Featured Guests Area End ***** -->
+
+ 
+  <!-- ***** Footer Area Start ***** -->
+  <footer class="footer-area section-padding-80-0">
+    
+            <!-- Widget Title -->
+           
+
+
+
+        <!-- Single Footer Widget -->
+        
+       
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-footer-widget mb-80">
+            <!-- Widget Title -->
+            <h4 class="widget-title">Follow Us</h4>
+            <!-- Social Info -->
+            <div class="footer-social-info">
+              <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+              <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube"><i class="fa fa-youtube-play"></i></a>
+            </div>
+            <!-- App Download Button -->
+            <div class="app-download-button mt-30">
+              <a href="#"><img src="{% static './img/core-img/app-store.png' %}" alt=""></a>
+              <a href="#"><img src="{% static './img/core-img/google-play.png' %}" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+     
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <!-- Popper js -->
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <!-- All js -->
+  <script src="{% static 'js/poca.bundle.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+{% load static %}
+{% load bootstrap4 %}
+{% load compress %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Poca - Podcast &amp; Audio Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Contact| FMCRS</title>
+<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
+  <!-- Favicon -->
+  <link rel="icon" href="{% static './img/core-img/download(1).png' %}">
+{% compress css %}
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" style="tet/x-scss" href="{% static 'style.css' %}">
+{% endcompress %}
+</head>
+
+<body>
+  <!-- Preloader -->
+  
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+    <!-- Main Header Start -->
+    <div class="main-header-area">
+      <div class="classy-nav-container breakpoint-off">
+        <!-- Classy Menu -->
+        <nav class="classy-navbar justify-content-between" id="pocaNav">
+
+          <!-- Logo -->
+          <a class="nav-brand" href="{% url 'index' %}"><img src="{% static './img/core-img/download(1).png' %}" alt=""></a>
+
+          <!-- Navbar Toggler -->
+          <div class="classy-navbar-toggler">
+            <span class="navbarToggler"><span></span><span></span><span></span></span>
+          </div>
+
+          <!-- Menu -->
+          <div class="classy-menu">
+
+            <!-- Menu Close Button -->
+            <div class="classycloseIcon">
+              <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+            </div>
+
+            <!-- Nav Start -->
+            <div class="classynav">
+              <ul id="nav">
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="#">recordings</a>
+                  <ul class="dropdown">
+                    <li><a href="{% url 'index' %}">- Home</a></li>
+                    <li><a href="./podcast.html">- Podcasts</a></li>
+                    
+                    <li><a href="{% url 'about' %}">- About Us</a></li>
+                    
+                    <li><a href="{% url 'contact' %}">- Contact</a></li>
+                    <li><a href="#">- Dropdown</a>
+                      <ul class="dropdown">
+                        <li><a href="#">- Dropdown Item</a></li>
+                        <li><a href="#">- Dropdown Item</a>
+                          <ul class="dropdown">
+                            <li><a href="#">- Even Dropdown</a></li>
+                            <li><a href="#">- Even Dropdown</a></li>
+                            <li><a href="#">- Even Dropdown</a></li>
+                            <li><a href="#">- Even Dropdown</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">- Dropdown Item</a></li>
+                        <li><a href="#">- Dropdown Item</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="{% url 'login:login' %}">Login</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                
+                <li class="current-item"><a href="{% url 'contact' %}">Contact</a></li>
+              </ul>
+
+              <!-- Top Search Area -->
+              
+              <!-- Top Social Area -->
+              <div class="top-social-area">
+                <a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+                <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                <a href="#" class="fa fa-pinterest" aria-hidden="true"></a>
+                <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+                <a href="#" class="fa fa-youtube-play" aria-hidden="true"></a>
+              </div>
+
+            </div>
+            <!-- Nav End -->
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-overlay" style="background-image: url({% static 'img/bg-img/2.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title mt-70">Contact Us</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Contact</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+  <!-- ***** Contact Area Start ***** -->
+  <section class="poca-contact-area mt-50 mb-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="google-maps mb-100">
+          <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+            <iframe src="https://www.google.com/maps/place/Guru+Nanak+Dev+Engineering+College/@30.8606954,75.8573778,17z/data=!3m1!4b1!4m5!3m4!1s0x391a828f09011b15:0xbf3f5b51dcc81b12!8m2!3d30.8606954!4d75.8595665"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Contact Information -->
+        <div class="col-12 col-md-6">
+          <div class="contact-information">
+            <div class="contact-heading mb-50">
+              <h2>Contact Info</h2>
+              <h6>We will be happy to assist you with any question</h6>
+             
+            </div>
+
+
+            <h5>Address: Guru Nanak Dev Engineering College, Gill Park, Ldh</h5>
+            <h5>Phone: +01-3-8888-6868</h5>
+            <h5>Email: fmcrsgndec@gmail.com </h5>
+            <h5>Open Hours: Mon - Fri: 8:00 AM to 2:00 PM</h5>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-12 col-md-6">
+          <div class="contact-form">
+            <div class="contact-heading" >
+              <h2>Get In Touch</h2>
+              <h5>Don't hesitate to contact us</h5>
+            </div>
+            <!-- Form -->
+            <form method="post" action="{% url 'contact' %}" >
+            {% csrf_token %}
+            {{form.as_p}}
+            
+           
+                <!--div class="col-12">
+                  <input type="text" name="message-name" class="form-control mb-30" placeholder="Your Name">
+                </div>
+                <div class="col-12">
+                  <input type="email" name="message-email" class="form-control mb-30" placeholder="Your Email">
+                </div>
+                <div class="col-12">
+                  <textarea name="message" class="form-control mb-30" placeholder="Your Message"></textarea>
+                </div-->
+                <div class="col-12">
+                  <button type="submit" class="btn poca-btn">Send Message</button>
+                </div>
+              </div>  
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Contact Area End ***** -->
+
+  
+
+        <!-- Single Footer Widget -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-footer-widget mb-80">
+            <!-- Widget Title -->
+            <h4 class="widget-title">Follow Us</h4>
+            <!-- Social Info -->
+            <div class="footer-social-info">
+              <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+              <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube"><i class="fa fa-youtube-play"></i></a>
+            </div>
+            <!-- App Download Button -->
+            <div class="app-download-button mt-30">
+              <a href="#"><img src="{% static './img/core-img/app-store.png' %}" alt=""></a>
+              <a href="#"><img src="{% static './img/core-img/google-play.png' %}" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <!-- Popper js -->
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <!-- All js -->
+  <script src="{% static 'js/poca.bundle.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'js/default-assets/active.js' %}"></script>
+
+</body>
+
+</html>
