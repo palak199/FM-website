@@ -1,6 +1,8 @@
 # FM-website
 a django based webapp with various modules.\
-including CRUD implementation\
+including CRUD implementation with mysql\
 login module\
 event calender\
-database used is mysql
+recordings\
+and a feedback form\
+
